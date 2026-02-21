@@ -5,7 +5,11 @@ const zagadki=[
 {p:"Ile liter ma słowo MIŁOŚĆ?",o:"6"},
 {p:"Jaka liczba to liczba miłosci?",o:"6"},
 {p:"Jak mam na drugie imię?",o:"konrad"},
-{p:"Od kiedy jesteśmy razem? (Napisz date)",o:"07.03.2024"}
+{p:"Od kiedy jesteśmy razem? (Napisz date)",o:"07.03.2024"},
+{p:"W jakiej grze się poznaliśmy?",o:"valorant"},
+{p:"Jak najczęściej na siebie mówimy?",o:"misia"},
+{p:"Na jakiej mapie pierwszy raz miałem z tobą doczynienia?",o:"split"},
+{p:"Co mówiłem gdy już byliśmy razem i wspominaliśmy jak się poznawaliśmy że jak się przy tobie czułem? (jedno słowo)",o:"komfortowo"}
 ];
 
 const losowa=zagadki[Math.floor(Math.random()*zagadki.length)];
@@ -13,15 +17,15 @@ document.getElementById("pytanie").innerText=losowa.p;
 
 /* ===== KUPONY ===== */
 const kuponyLista=[
-"Wieczór filmowy - Ty wybierasz film i oglądam go bez wymówek 🍿",
-"Masaż pleców ❤️",
-"Śniadanie do łóżka 😍",
-"Spacer bez marudzenia 😄",
-"Maraton TikToków 😂",
-"Kolacja razem 🍝",
-"Mini sesja zdjęciowa 📸",
+"Wieczór filmowy - Ty wybierasz film i oglądam go bez wymówek 🍿🎬",
+"Domowe Spa - Razem Maseczki, Robię ci masaż, Świeczka ❤️💆",
+"Śniadanie do łóżka 😍🍝",
+"Wyciskanie pryszczów (ja tobie ty mi) 🤮🩹",
+"111 😂",
+"Maczek UwU - Ty płacisz HiHi 🍔",
+"111 📸",
 "Lody lub coś słodkiego bez wymówek 🍦",
-"Dzień tylko dla nas 💕",
+"✌👅️",
 "Niespodzianka 🎁"
 ];
 
@@ -51,7 +55,7 @@ kuponyLista.forEach((tekst,i)=>{
   // Sprawdzenie czy wszystkie kupony użyte
 if(usedKupony.length === kuponyLista.length){
   setTimeout(()=>{
-    alert("🎉 Wszystkie kupony użyte! Gratulacje… wygrałaś główną nagrodę: Mnie na zawsze ❤️");
+    alert("🎉 Wszystkie kupony użyte! Gratulacje… wygrałaś główną nagrodę: Mnie na Zawsze ❤️");
   }, 500); // małe opóźnienie, żeby eksplozja serduszek była pierwsza
 }
 
