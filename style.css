@@ -1,0 +1,111 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#ff4d6d,#ff99c8);
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+/* ===== SERCA TŁO ===== */
+.hearts{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  pointer-events:none;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.heart{
+  position:absolute;
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+  0%{transform:translateY(-10vh) rotate(0);opacity:1;}
+  100%{transform:translateY(110vh) rotate(360deg);opacity:0;}
+}
+
+/* ===== UKŁAD ===== */
+.container{
+  padding:20px;
+  max-width:500px;
+  margin:auto;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(10px);
+  padding:20px;
+  border-radius:20px;
+  margin-top:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+  margin-top:30px;
+  font-size:26px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border-radius:15px;
+  border:none;
+  margin-top:15px;
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  margin-top:15px;
+  padding:14px;
+  border:none;
+  border-radius:20px;
+  background:#ff1e56;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#e0003c;
+  transform:scale(1.03);
+}
+
+.kupony{
+  display:none;
+  margin-top:20px;
+}
+
+.kupon{
+  background:rgba(255,255,255,0.25);
+  margin:12px 0;
+  padding:15px;
+  border-radius:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.kupon:hover{
+  transform:scale(1.05);
+}
+
+.used{
+  background:#6c757d !important;
+  text-decoration:line-through;
+  opacity:0.8;
+  cursor:default;
+}
+
+footer{
+  margin-top:30px;
+  opacity:0.8;
+  font-size:14px;
+}
