@@ -20,12 +20,12 @@ const kuponyLista=[
 "Wieczór filmowy - Ty wybierasz film i oglądam go bez wymówek 🍿🎬",
 "Domowe Spa - Razem Maseczki, Robię ci masaż, Świeczka ❤️💆",
 "Śniadanie do łóżka 😍🍝",
-"Wyciskanie pryszczów (ja tobie ty mi) 🤮🩹",
-"111 😂",
+"Wyciskanie pryszczów (ja tobie ty mi) 🤮",
+"Jestem dla ciebie milutki przez cały dzień 💏",
 "Maczek UwU - Ty płacisz HiHi 🍔",
-"111 📸",
+"Przytulaski i buziaczki tylko my przez 20 minut (tylko nie zaśnij!) 😅💋",
 "Lody lub coś słodkiego bez wymówek 🍦",
-"✌👅️",
+"Netflix & Chill ✌👅️",
 "Niespodzianka 🎁"
 ];
 
